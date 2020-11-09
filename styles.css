@@ -35,6 +35,10 @@ h1 {
   width: 100%;
 }
 
+.collapsible:focus {
+  outline: none;
+}
+
 .active, .collapsible:hover {
   background-color: #f1f1f1;
   font-weight: 700;
@@ -50,7 +54,7 @@ h1 {
 }
 
 .content {
-  padding: 0 18px;
+  padding: 0 20px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
