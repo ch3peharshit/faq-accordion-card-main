@@ -1,5 +1,5 @@
 body {
-  font-family: 'Kumbh Sans', sans-serif;
+  font-family: 'Kumbh Sans', sans-serif !important;
   color: hsl(237, 12%, 33%) !important;
   background: linear-gradient(to top, hsl(240, 73%, 65%) 0%, hsl(273, 75%, 66%) 100%);
 }
@@ -7,7 +7,6 @@ body {
 h1 {
   color: hsl(238, 29%, 16%);
   font-weight: 700;
-  font-family: Courier;
 }
 
 .background-gradient {
@@ -33,6 +32,7 @@ h1 {
   text-align: left;
   outline: none;
   font-size: 15px;
+  width: 100%;
 }
 
 .active, .collapsible:hover {
@@ -40,16 +40,13 @@ h1 {
   font-weight: 700;
 }
 
-.collapsible:after {
-  content: '\02795';
-  font-size: 13px;
-  color: black;
+.collapsible-arrow {
+  margin-top: 10px;
   float: right;
-  margin-left: 5px;
 }
 
-.active:after {
-  content: "\2796";
+.active .collapsible-arrow {
+  transform: rotate(180deg);
 }
 
 .content {
@@ -58,14 +55,6 @@ h1 {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: #f1f1f1;
-  <<<<<<< Updated upstream width: 50%;
-}
-
-h1 {
-  color: hsl(238, 29%, 16%);
-  font-weight: 700;
-  font-family: Courier;
-  =======>>>>>>>Stashed changes
 }
 
 .attribution {
