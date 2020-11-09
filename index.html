@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -20,8 +20,39 @@
   <div class="bg-color">
     <div class="container">
       <h1>FAQ</h1><br />
-
-      How many team members can I invite?
+      <button type="button" class="collapsible">How many team members can I invite?</button>
+      <div class="content">
+        <p>
+          You can invite up to 2 additional users on the Free plan. There is no limit on
+      team members for the Premium plan.
+        </p>
+      </div>
+      <button type="button" class="collapsible">What is the maximum file upload size?</button>
+      <div class="content">
+        <p>
+          No more than 2GB. All files in your account must fit your allotted storage space.
+        </p>
+      </div>
+      <button type="button" class="collapsible">How do I reset my password?</button>
+      <div class="content">
+        <p>
+          Click “Forgot password” from the login page or “Change password” from your profile page.
+      A reset link will be emailed to you.
+        </p>
+      </div>
+      <button type="button" class="collapsible">Can I cancel my subscription?</button>
+      <div class="content">
+        <p>
+          Yes! Send us a message and we’ll process your request no questions asked.
+        </p>
+      </div>
+      <button type="button" class="collapsible">Do you provide additional support?</button>
+      <div class="content">
+        <p>
+          Chat and email support is available 24/7. Phone lines are open during normal business hours.
+        </p>
+      </div>
+      <!-- How many team members can I invite?
       You can invite up to 2 additional users on the Free plan. There is no limit on
       team members for the Premium plan.
 
@@ -36,7 +67,7 @@
       Yes! Send us a message and we’ll process your request no questions asked.
 
       Do you provide additional support?
-      Chat and email support is available 24/7. Phone lines are open during normal business hours.
+      Chat and email support is available 24/7. Phone lines are open during normal business hours. -->
     </div>
 
     <div class="attribution">
@@ -44,7 +75,22 @@
       Coded by <a href="https://github.com/rhumbert1">Morfrog</a>.
     </div>
   </div>
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+var i;
 
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
 </body>
 
 </html>
