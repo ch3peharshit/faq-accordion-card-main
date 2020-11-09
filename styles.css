@@ -1,13 +1,13 @@
 body {
-  
   font-family: 'Kumbh Sans', sans-serif;
   color: hsl(237, 12%, 33%) !important;
+  background: linear-gradient(to top, hsl(240, 73%, 65%) 0%, hsl(273, 75%, 66%) 100%);
 }
 
-hr {
-  width: 50%;
-  text-align: left;
-  margin-left: 0;
+h1 {
+  color: hsl(238, 29%, 16%);
+  font-weight: 700;
+  font-family: Courier;
 }
 
 .background-gradient {
@@ -19,7 +19,6 @@ hr {
 }
 
 .container {
-  margin: 50px 50px 50px 50px;
   background-color: #f1f1f1;
   border-radius: 20px;
   padding: 50px 50px 50px 50px;
@@ -30,7 +29,6 @@ hr {
   color: black;
   cursor: pointer;
   padding: 18px;
-  width: 50%;
   border: none;
   text-align: left;
   outline: none;
@@ -60,13 +58,14 @@ hr {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: #f1f1f1;
-  width: 50%;
+  <<<<<<< Updated upstream width: 50%;
 }
 
 h1 {
   color: hsl(238, 29%, 16%);
   font-weight: 700;
   font-family: Courier;
+  =======>>>>>>>Stashed changes
 }
 
 .attribution {
