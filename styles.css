@@ -15,6 +15,7 @@ h1 {
   width: 100%;
   height: 100%;
   z-index: -1;
+  font-size: 12px;
 }
 
 .container {
@@ -35,14 +36,17 @@ h1 {
   width: 100%;
 }
 
-.active, .collapsible:hover {
-  background-color: #f1f1f1;
-  font-weight: 700;
+.collapsible:hover {
+  font-weight: bold;
+}
+
+.collapsible:focus {
+  outline: none;
 }
 
 .collapsible-arrow {
-  margin-top: 10px;
   float: right;
+  margin-top: 10px;
 }
 
 .active .collapsible-arrow {
@@ -50,10 +54,7 @@ h1 {
 }
 
 .content {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
+  padding: 0 20px;
   background-color: #f1f1f1;
 }
 
